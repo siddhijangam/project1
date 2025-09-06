@@ -1,0 +1,47 @@
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: -80px auto 60px auto; 
+  flex-wrap: wrap;
+  max-width: 1500px;
+
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  height: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  
+ 
+  display: flex;            
+  align-items: center;        
+  gap: 15px;                  
+  text-align: left;          
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 40px;
+  color: #a445f7;
+  flex-shrink: 0;  
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  color: #222;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}

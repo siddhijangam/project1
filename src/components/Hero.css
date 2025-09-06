@@ -1,0 +1,104 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  background: url("https://t3.ftcdn.net/jpg/04/22/94/62/360_F_422946225_fwALKxPJg5HtQMkcb5DVuyCWPYSMNH3s.jpg")
+    no-repeat center center/cover;
+  color: white;
+  height: 700px;
+  padding-left: 80px;
+  padding-right: 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  background: orange;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #09c0ee;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: -80px auto 60px auto; 
+  flex-wrap: wrap;
+  max-width: 1500px;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  height: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  display: flex;              
+  align-items: center;        
+  gap: 15px;                  
+  text-align: left;           
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+     background: rgb(245, 166, 241);
+
+}
+
+.feature-card i {
+  font-size: 40px;
+  color: #a445f7;
+  flex-shrink: 0;   /* icon size fix राहील */
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  color: #222;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .feature-card {
+    width: 45%;  /* Tablet वर 2 cards एका row मध्ये */
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-card {
+    width: 100%;  /* Mobile वर full width */
+  }
+}

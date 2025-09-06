@@ -1,0 +1,45 @@
+.subject-title {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* underline effect */
+.subject-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: #ffc107; 
+  transition: width 0.3s ease;
+}
+
+/* hover effect */
+.subject-title:hover {
+  color: #ffc107; 
+}
+
+.subject-title:hover::after {
+  width: 100%; 
+}
+/* overlay default */
+.overlay {
+  background: rgba(0, 0, 0, 0.4); 
+  transition: background 0.3s ease;
+}
+
+/* hover - blue blur effect */
+.subject-card:hover .overlay {
+  background: rgba(0, 123, 255, 0.5); 
+  backdrop-filter: blur(3px); 
+}
+
+.sid{
+    color: rgba(11, 36, 147, 0.933);
+     color: rgba(11, 36, 147, 0.933);
+}

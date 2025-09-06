@@ -1,0 +1,105 @@
+.footer {
+  background: #4651a3;
+  color: white;
+  padding: 60px 80px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+  margin-right: 50px;
+}
+
+.footer-left h2 {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  background: rgba(255, 255, 255, 0.2);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-links {
+  flex: 1 1 150px;
+  margin-bottom: 20px;
+}
+
+.footer-links h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-bottom span {
+  color: #ff9de3;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #d68eff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.Pp{
+  color: rgb(193, 190, 190);
+} 
