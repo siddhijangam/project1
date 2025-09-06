@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./subjects.css"; 
+
 
 const subjects = [
   { img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c", title: "PROGRAMING" },
