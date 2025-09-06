@@ -1,0 +1,37 @@
+.subject-card {
+  position: relative;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.subject-card .overlay {
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.4s ease;
+}
+
+.subject-card:hover .overlay {
+  background: rgba(57, 22, 255, 0.6); /* purple overlay */
+}
+
+.subject-card .card-title {
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.subject-card:hover .card-title {
+  color: #ffd700; /* text color change on hover */
+}
+
+.arrow-icon {
+  opacity: 0;
+  font-size: 22px;
+  margin-top: 10px;
+  transform: translateX(-10px);
+  transition: all 0.4s ease;
+}
+
+.subject-card:hover .arrow-icon {
+  opacity: 1;
+  transform: translateX(0);
+}

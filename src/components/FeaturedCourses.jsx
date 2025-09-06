@@ -15,9 +15,9 @@ function FeaturedCourses() {
               {/* Card 1 */}
               <div className="col-md-4">
                 <div className="card shadow-sm h-100">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxGhMA-dQtZfuBharwy9htuOLwv1LPs43cQtqjsr8pGz4Wfg3kmpXE2O8lrEhHyiHiczU&usqp=CAU" className="card-img-top" alt="Course 1" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxGhMA-dQtZfuBharwy9htuOLwv1LPs43cQtqjsr8pGz4Wfg3kmpXE2O8lrEhHyiHiczU&usqp=CAU" className="card-img-top" alt="Course 1" style={{ height: "240px", objectFit: "cover" }}/>
                   <div className="card-body">
-                    <h6 className="text-muted">User Experience</h6>
+                    <h6 className="text-muted">User Experience</h6> 
                     <h5 className="card-title">Fundamental of UX for Application design</h5>
                     <p className="card-text">Learn tools & techniques to design better apps. The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
                     <div className="d-flex justify-content-between">
@@ -33,7 +33,7 @@ function FeaturedCourses() {
               {/* Card 2 */}
               <div className="col-md-4">
                 <div className="card shadow-sm h-100">
-                  <img src="https://www.codelabsystems.in/assets/img/blog/reactjs-article.webp"  className="card-img-top " alt="Course 2" style={{ height: "240px", objectFit: "cover" }}  />
+                  <img src="https://miro.medium.com/v2/resize:fit:1400/1*AqrGgu7igpKkblUWbt0AZg.jpeg"  className="card-img-top " alt="Course 2" style={{ height: "240px", objectFit: "cover" }}  />
                   <div className="card-body">
                     <h6 className="text-muted">Web Development</h6>
                     <h5 className="card-title">Modern Web with React</h5>
