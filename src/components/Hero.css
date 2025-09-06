@@ -5,7 +5,7 @@
   background: url("https://t3.ftcdn.net/jpg/04/22/94/62/360_F_422946225_fwALKxPJg5HtQMkcb5DVuyCWPYSMNH3s.jpg")
     no-repeat center center/cover;
   color: white;
-  height: 600px;
+  height: 700px;
   padding-left: 80px;
   padding-right: 20px;
 }
@@ -53,7 +53,6 @@
 }
 
 .feature-card {
-  margin-bottom: 100px;
   background: white;
   padding: 20px;
   border-radius: 12px;
