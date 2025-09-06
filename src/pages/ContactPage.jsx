@@ -22,22 +22,18 @@ const ContactPage = () => {
         <h1 style={{ fontSize: "48px", fontWeight: "bold", color: "white" }}>
           Contact Us
         </h1>
-
-        {/* 👉 breadcrumb text */}
         <p style={{ marginTop: "10px", fontSize: "18px", color: "white" }}>
           Home | Contact
         </p>
-
-       
       </section>
 
       {/* Map Section */}
-      <section style={{ margin: "40px auto", maxWidth: "1100px"  }}>
+      <section style={{ margin: "40px auto", maxWidth: "1100px", padding: "0 20px" }}>
         <iframe
           title="Google Map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.0344739699!2d73.86296739999999!3d18.52461645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1756976304044!5m2!1sen!2sin"
           width="100%"
-          height="500"
+          height="400"
           style={{ border: "0", borderRadius: "10px" }}
           allowFullScreen=""
           loading="lazy"
@@ -45,7 +41,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Section */}
-      <section style={{ padding: "60px" }}>
+      <section style={{ padding: "40px 20px" }}>
         <div
           style={{
             display: "grid",
@@ -54,6 +50,7 @@ const ContactPage = () => {
             maxWidth: "1100px",
             margin: "0 auto",
           }}
+          className="contact-grid"
         >
           {/* Form */}
           <div>
@@ -75,17 +72,17 @@ const ContactPage = () => {
               <div
                 style={{
                   display: "flex",
+                  flexWrap: "wrap",
                   gap: "10px",
                   marginBottom: "15px",
                 }}
               >
-                {/* Name Input with Suggestions */}
                 <input
                   type="text"
                   placeholder="Enter your name"
                   list="nameSuggestions"
                   style={{
-                    flex: 1,
+                    flex: "1 1 200px",
                     padding: "12px",
                     border: "1px solid #ccc",
                     borderRadius: "5px",
@@ -98,13 +95,12 @@ const ContactPage = () => {
                   <option value="Sneha" />
                 </datalist>
 
-                {/* Email Input with Suggestions */}
                 <input
                   type="email"
                   placeholder="Email"
                   list="emailSuggestions"
                   style={{
-                    flex: 1,
+                    flex: "1 1 200px",
                     padding: "12px",
                     border: "1px solid #ccc",
                     borderRadius: "5px",
@@ -117,12 +113,19 @@ const ContactPage = () => {
                 </datalist>
               </div>
 
-              <div style={{ display: "flex", gap: "125px" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexWrap: "wrap",
+                  fontSize: "14px",
+                  marginBottom: "10px",
+                }}
+              >
                 <p>come on, you have a name, don't you?</p>
                 <p>no email, no message</p>
               </div>
 
-              {/* Subject Input with Suggestions */}
               <input
                 type="text"
                 placeholder="Enter Subject"
@@ -155,6 +158,7 @@ const ContactPage = () => {
                   cursor: "pointer",
                   fontWeight: "bold",
                   letterSpacing: "1px",
+                  marginTop: "10px",
                 }}
               >
                 SEND
@@ -163,7 +167,7 @@ const ContactPage = () => {
           </div>
 
           {/* Contact Info */}
-          <div style={{ marginTop: "55px", marginLeft: "50px" }}>
+          <div style={{ marginTop: "55px" }}>
             <div style={{ marginBottom: "20px" }}>
               <h5>
                 <i className="bi bi-geo-alt"></i> Address
@@ -199,6 +203,15 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Responsive CSS */}
+      <style>{`
+        @media (max-width: 768px) {
+          .contact-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      `}</style>
     </div>
   );
 };
